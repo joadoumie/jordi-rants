@@ -15,6 +15,6 @@ If you're interested in learning how to build your own segment for your favorite
 
 #Set Up Oh My Posh
 
-Oh My Posh is an awesome open-source prompt theme engine for any shell. This means that if you're running Linux, Mac, Windows, whatever shell you have... it is compatible and will run on your machine. 
+[Oh My Posh](https://ohmyposh.dev/) is an awesome open-source prompt theme engine for any shell. This means that if you're running Linux, Mac, Windows, whatever shell you have... it is compatible and will run on your machine. 
 
 To get setup, you first need to install Oh My Posh. You can install Oh My Posh
