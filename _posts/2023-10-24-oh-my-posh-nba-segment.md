@@ -55,7 +55,8 @@ Once you've saved the file changes, you'll need to reload your profile for the c
 
 For me personally, I had to **restart Windows Terminal** and that seemed to work well... but wait! Look at this...
 
-![](https://github.com/joadoumie/jordi-rants/blob/main/assets/broken-profile.png)
+![image](https://github.com/joadoumie/jordi-rants/assets/98557455/8e5d2e1a-c1d5-4556-9206-ef470e948434)
+
 
 That doesn't look good at all! Well it turns out that the default profile and theming uses something called ["Nerd Fonts"](#installing-nerd-fonts), so a lot of stuff doesn't really seem to render properly without it. You can create your own theming to not use nerd fonts, but I highly recommend them because I think they make the whole thing look a whole lot better!
 
@@ -63,7 +64,8 @@ That doesn't look good at all! Well it turns out that the default profile and th
 
 The [oh my posh documentation](https://ohmyposh.dev/docs/installation/fonts) does a great job at showing how to install nerd fonts, but I figured let's outline how to do so in here as well. You can install a variety of nerd fonts, but I personally have been really liking Meslo LGM Nerd Font. You can install the font [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Meslo.zip). You'll need to extract the files from the zip folder. Then, select all of the TrueType font files within the folder, right-click and select "Install": 
 
-![](https://github.com/joadoumie/jordi-rants/blob/main/assets/install-fonts.png)
+![image](https://github.com/joadoumie/jordi-rants/assets/98557455/21b6aa23-db75-43ab-890c-ac95f536ce06)
+
 
 Check out the oh my posh documentation for installing nerd fonts for other operatings systems, as I'm less familiar with that process, but I assume it's probably just as easy!
 
