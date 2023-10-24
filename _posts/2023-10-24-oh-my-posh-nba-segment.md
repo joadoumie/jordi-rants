@@ -187,7 +187,7 @@ In the snippet above, you can see that the NBA segment has a few properties that
 | Name        | Type     | Description                                                                                                |
 | ----------- | -------- | ---------------------------------------------------------------------------------------------------------- |
 | "team"    | `string` | The team tri-code that you'd like to get information for. This is a required field. |
-| "http_timeout"     | `string` | The amount of time you are willing to wait for the API to respond before timing out. This is an optional field. I recommend keeping this to AT LEAST 1500 ms|
+| "http_timeout"     | `string` | The amount of time you are willing to wait for the API to respond before timing out. I recommend keeping this to AT LEAST 1500 ms.|
 | "season"        | `string` | The season you'd like to get information for. This is an optional field. If you don't provide a season, it will default to the current season. If you provide a previous season tbh... idk what will happen. Likely will just NOT work. | 
 | "days_offset"      | `string` | The number of days into the future you'd like to search for the upcoming game. This is an optional field. If you don't provide a days offset, it will default to 8 days. |
 
