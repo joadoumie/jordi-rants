@@ -75,6 +75,7 @@ Great! Now we should have the proper fonts installed on the machine to actually 
 
 In Windows Terminal, you can 
 
-![](https://github.com/joadoumie/jordi-rants/blob/main/assets/open-json-wt.png)
+![image](https://github.com/joadoumie/jordi-rants/assets/98557455/0bdb847c-8005-4c85-bbfa-3a1a5a35ee72)
+
 
 ## Including the NBA Segment in Your Own oh my posh Profile
