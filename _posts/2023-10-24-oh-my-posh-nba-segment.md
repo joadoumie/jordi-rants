@@ -14,6 +14,17 @@ The result looks pretty good... but doesn't change the fact the Lakers can still
 
 ![Screenshot 2023-10-16 111008](https://github.com/joadoumie/jordi-rants/assets/98557455/2e3be099-878f-401a-bf01-e42889a1c08a)
 
+You'll also get live scores so you can track the progress of the game in real-time: 
+
+![image](https://github.com/joadoumie/jordi-rants/assets/98557455/ad73ce57-7604-49d8-9047-dcfbdd6e6a56)
+
+The game started off so much better... 
+
+And you'll get info on the next scheduled game too...
+
+![image](https://github.com/joadoumie/jordi-rants/assets/98557455/ee46c2f2-de4c-4c00-8257-b6749b3b3a8d)
+
+
 If you're interested in learning how to program/build your own segment for your favorite shells, check out the [video](https://youtu.be/NR7i0SKFbtI) I made where I built ^ this exact NBA segment from scratch!
 
 ## Set Up Oh My Posh
