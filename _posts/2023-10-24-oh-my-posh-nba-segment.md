@@ -9,8 +9,7 @@ I just built a thing. I'm a huge basketball fan, and as a developer, I'm also al
 
 The result looks pretty good... but doesn't change the fact the Lakers can still lose apparently:
 
-![image](https://github.com/joadoumie/jordi-rants/assets/98557455/823d98ae-b477-41a4-9802-967ae9c677ca)
-
+![Screenshot 2023-10-16 111008](https://github.com/joadoumie/jordi-rants/assets/98557455/2e3be099-878f-401a-bf01-e42889a1c08a)
 
 If you're interested in learning how to build your own segment for your favorite shells, check out the video I made where I built ^ this exact NBA segment from scratch!
 
