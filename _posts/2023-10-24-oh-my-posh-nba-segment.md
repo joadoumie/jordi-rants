@@ -73,9 +73,102 @@ Great! Now we should have the proper fonts installed on the machine to actually 
 
 # Getting Nerd Fonts to Render in Windows Terminal
 
-In Windows Terminal, you can 
+In Windows Terminal, you can open up the settings by clicking on the dropdown arrow next to the plus sign, and selecting "Settings". Then, click on 'Open JSON file' to open up the settings file in your default JSON editor:
 
 ![image](https://github.com/joadoumie/jordi-rants/assets/98557455/0bdb847c-8005-4c85-bbfa-3a1a5a35ee72)
 
+Add the following block into the defaults of the settings file:
+
+![](2023-10-24-15-49-59.png)
+
+And voila! Look at the end result!
+
+![](2023-10-24-15-50-36.png)
+
+That's so much better! Now we can actually see the segments and the icons that are being rendered. Finally, we need to [add the NBA segment to the prompt](#including-the-nba-segment-in-your-own-oh-my-posh-profile).
 
 ## Including the NBA Segment in Your Own oh my posh Profile
+
+Finally, we can start discussing adding the NBA segment to your oh-my-posh prompt.
+
+### Segments & Themes
+
+First off, a segment is a piece of information that is rendered in the prompt. Segments can be anything from the current time, to the current git branch, to the current NBA score. You can find a list of all the segments [here](https://ohmyposh.dev/docs/segments).
+
+For example, you can see a few segments pointed out in the image below:
+
+![](2023-10-24-16-00-33.png)
+
+In general, themes are a specific collection of segments that the community has put together. Themes are the way that you can customize the look and feel of your prompt. You can create your own themes, or you can use one of the many themes that are already available. You can find a list of themes [here](https://ohmyposh.dev/docs/themes).
+
+### NBA Segment Anatomy and Setting Up a Custom Theme
+
+The standard initialization sets Oh My Posh's default theme. This configuration is embedded and thus kept up-to-date with Oh My Posh.
+
+To set a new config/theme you need to change the --config option of the oh-my-posh init that we previously added to the $PROFILE.
+
+For example: 
+
+```powershell
+oh-my-posh init pwsh --config 'C:/Users/Posh/jandedobbeleer.omp.json' | Invoke-Expression
+```
+
+Themes themsleves are simply .json files. You can find a bunch of examples on the GitHub repo [here](https://github.com/JanDeDobbeleer/oh-my-posh/tree/main/themes).
+
+Let's create a new theme, that JUST contains the NBA segment and then light it up in PowerShell. While I like to include a bunch of segments personally, I'll start with just the NBA segment and that way you can explore more segments on your own.
+
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#e9ac2f",
+          "foreground": "#8748dc",
+          "leading_diamond": "\ue0b6",
+          "style": "diamond",
+          "trailing_diamond": "\ue0b0",
+          "type": "nba",
+          "properties": {
+            "team":"LAL",
+            "http_timeout": 1500,
+	        "season": "2023",
+	        "days_offset": 8
+          }
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "final_space": true,
+  "version": 2
+}
+```
+
+This is a pretty simple theme, and should look something like this:
+
+![](2023-10-24-16-04-18.png)
+
+In order to use the NBA segment, you need to provide a valid team
+[tri-code](https://liaison.reuters.com/tools/sports-team-codes) that you'd
+like to get data for inside of the configuration. For example, if you'd like
+to get information for the Los Angeles Lakers, you'd need to use the "LAL"
+tri-code.  
+
+This example uses "LAL" to get information for the Los Angeles Lakers. It also
+sets the foreground and background colors to match the theming for the team.
+If you are interested in getting information about specific foreground and
+background colors you could use for other teams, you can explore some of
+the color schemes [here](https://teamcolorcodes.com/nba-team-color-codes/).
+
+In the snippet above, you can see that the NBA segment has a few properties that you can set:
+
+| Name        | Type     | Description                                                                                                |
+| ----------- | -------- | ---------------------------------------------------------------------------------------------------------- |
+| "team"    | `string` | The team that you'd like to get information for. This is a required field. |
+| "http_timeout"     | `string` | The amount of time you are willing to wait for the API to respond before timing out. This is an optional field. I recommend keeping this to AT LEAST 1500 ms|
+| "season"        | `string` | The season you'd like to get information for. This is an optional field. If you don't provide a season, it will default to the current season. If you provide a previous season tbh... idk what will happen. Likely will just NOT work. | 
+| "days_offset"      | `string` | The number of days into the future you'd like to search for the upcoming game.
