@@ -18,7 +18,7 @@ If you're interested in learning how to program/build your own segment for your 
 
 ## Set Up Oh My Posh
 
-I'll walkthrough how this all works on my Windows machine, using Windows Terminal with PowerShell, but remember that you can get the same effects on ANY OS with practically ANY shell. I'll include links to getting set up on other machines/shells.
+I'll walk through how this all works on my Windows machine, using Windows Terminal with PowerShell, but remember that you can get the same effects on ANY OS with practically ANY shell. I'll include links to getting set up on other machines/shells.
 
 # What is Oh My Posh
 
@@ -185,6 +185,10 @@ In the snippet above, you can see that the NBA segment has a few properties that
 
 At this time of writing, I am still waiting on the PR to get approved so that this functionality comes **out of the box** with Oh My Posh. However, you can still use this functionality by cloning the repo and testing it out yourself!
 
-1. Clone my PR here - https://github.com/JanDeDobbeleer/oh-my-posh/pull/4352
-2. navigate to the src folder and run `go build`
-3. 
+1. Clone my PR [here](https://github.com/JanDeDobbeleer/oh-my-posh/pull/4352)
+2. Navigate to the src folder and run `go build`
+3. Edit the $PROFILE to point to the new oh-my-posh executable and the new theme file (as described above)
+   
+```powershell
+C:\Users\jadou\source\repos\oh-my-posh\src\src.exe init --config 'C:\Users\jadou\source\oh-my-posh-profiles\lakers.omp.json' pwsh | Invoke-Expression
+```
