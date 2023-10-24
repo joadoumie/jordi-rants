@@ -1,5 +1,5 @@
 ---
-title: "NBA Data Directly in Your Favorite Shell!"
+title: "Live NBA Data in Windows Terminal! NBA Oh My Posh Segment."
 date: 2023-10-24
 ---
 
