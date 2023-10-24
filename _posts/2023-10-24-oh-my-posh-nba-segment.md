@@ -11,7 +11,7 @@ The result looks pretty good... but doesn't change the fact the Lakers can still
 
 ![Screenshot 2023-10-16 111008](https://github.com/joadoumie/jordi-rants/assets/98557455/2e3be099-878f-401a-bf01-e42889a1c08a)
 
-If you're interested in learning how to build your own segment for your favorite shells, check out the [video](https://youtu.be/NR7i0SKFbtI) I made where I built ^ this exact NBA segment from scratch!
+If you're interested in learning how to program/build your own segment for your favorite shells, check out the [video](https://youtu.be/NR7i0SKFbtI) I made where I built ^ this exact NBA segment from scratch!
 
 ## Set Up Oh My Posh
 
@@ -171,4 +171,4 @@ In the snippet above, you can see that the NBA segment has a few properties that
 | "team"    | `string` | The team that you'd like to get information for. This is a required field. |
 | "http_timeout"     | `string` | The amount of time you are willing to wait for the API to respond before timing out. This is an optional field. I recommend keeping this to AT LEAST 1500 ms|
 | "season"        | `string` | The season you'd like to get information for. This is an optional field. If you don't provide a season, it will default to the current season. If you provide a previous season tbh... idk what will happen. Likely will just NOT work. | 
-| "days_offset"      | `string` | The number of days into the future you'd like to search for the upcoming game.
+| "days_offset"      | `string` | The number of days into the future you'd like to search for the upcoming game. This is an optional field. If you don't provide a days offset, it will default to 8 days. |
