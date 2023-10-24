@@ -82,11 +82,13 @@ In Windows Terminal, you can open up the settings by clicking on the dropdown ar
 
 Add the following block into the defaults of the settings file:
 
-![](2023-10-24-15-49-59.png)
+![image](https://github.com/joadoumie/jordi-rants/assets/98557455/29d3bb6b-ae24-4c56-b526-043e3a1ef665)
+
 
 And voila! Look at the end result!
 
-![](2023-10-24-15-50-36.png)
+![image](https://github.com/joadoumie/jordi-rants/assets/98557455/d695611a-56ca-4672-a92a-2a3e9560c2d6)
+
 
 That's so much better! Now we can actually see the segments and the icons that are being rendered. Finally, we need to [add the NBA segment to the prompt](#including-the-nba-segment-in-your-own-oh-my-posh-profile).
 
@@ -100,7 +102,8 @@ First off, a segment is a piece of information that is rendered in the prompt. S
 
 For example, you can see a few segments pointed out in the image below:
 
-![](2023-10-24-16-00-33.png)
+![image](https://github.com/joadoumie/jordi-rants/assets/98557455/c94ec566-93dc-45f7-aa3c-6cdd7296a660)
+
 
 In general, themes are a specific collection of segments that the community has put together. Themes are the way that you can customize the look and feel of your prompt. You can create your own themes, or you can use one of the many themes that are already available. You can find a list of themes [here](https://ohmyposh.dev/docs/themes).
 
@@ -153,7 +156,8 @@ Let's create a new theme, that JUST contains the NBA segment and then light it u
 
 This is a pretty simple theme, and should look something like this:
 
-![](2023-10-24-16-04-18.png)
+![image](https://github.com/joadoumie/jordi-rants/assets/98557455/016d34a3-069c-4b64-b91f-d0a3f962d335)
+
 
 In order to use the NBA segment, you need to provide a valid team
 [tri-code](https://liaison.reuters.com/tools/sports-team-codes) that you'd
