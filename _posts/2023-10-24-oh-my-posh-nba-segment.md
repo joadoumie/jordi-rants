@@ -63,7 +63,7 @@ That doesn't look good at all! Well it turns out that the default profile and th
 
 The [oh my posh documentation](https://ohmyposh.dev/docs/installation/fonts) does a great job at showing how to install nerd fonts, but I figured let's outline how to do so in here as well. You can install a variety of nerd fonts, but I personally have been really liking Meslo LGM Nerd Font. You can install the font [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Meslo.zip). You'll need to extract the files from the zip folder. Then, select all of the TrueType font files within the folder, right-click and select "Install": 
 
-![](../../assets/install-fonts.pnginstall-fonts.png)
+![](https://github.com/joadoumie/jordi-rants/blob/main/assets/install-fonts.png)
 
 Check out the oh my posh documentation for installing nerd fonts for other operatings systems, as I'm less familiar with that process, but I assume it's probably just as easy!
 
@@ -73,6 +73,6 @@ Great! Now we should have the proper fonts installed on the machine to actually 
 
 In Windows Terminal, you can 
 
-![](2023-10-24-15-09-02.png)
+![](https://github.com/joadoumie/jordi-rants/blob/main/assets/open-json-wt.png)
 
 ## Including the NBA Segment in Your Own oh my posh Profile
