@@ -55,7 +55,7 @@ Once you've saved the file changes, you'll need to reload your profile for the c
 
 For me personally, I had to **restart Windows Terminal** and that seemed to work well... but wait! Look at this...
 
-![TestImage]({{ site.image-url }}/broken-profile.png)
+![](https://github.com/joadoumie/jordi-rants/assets/broken-profile.png)
 
 That doesn't look good at all! Well it turns out that the default profile and theming uses something called ["Nerd Fonts"](#installing-nerd-fonts), so a lot of stuff doesn't really seem to render properly without it. You can create your own theming to not use nerd fonts, but I highly recommend them because I think they make the whole thing look a whole lot better!
 
