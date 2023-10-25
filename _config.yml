@@ -2,3 +2,6 @@ theme: minima
 author: Jordi Adoumie
 description: A blog where I explore interesting topics. Usually technology or basketball... or the intersection of the two. Opinions are my own.
 image-url: 'https://github.com/joadoumie.github.io/jordi-rants/assets/'
+
+# Google Analytics
+google_analytics: G-1Y9NSBY5XQ
