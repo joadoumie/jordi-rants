@@ -3,7 +3,7 @@ title: "Live NBA Data in Windows Terminal! NBA Oh My Posh Segment."
 date: 2023-10-24
 ---
 
-## Introduction
+# Introduction
 
 I just built a thing. I'm a huge basketball fan, and as a developer, I'm also always in Windows Terminal. So, why shouldn't I be able to see information about my favorite basketball team on a surface I spend A LOT of my time staring at?
 
@@ -24,15 +24,15 @@ And you'll get info on the next scheduled game too...
 
 If you're interested in learning how to program/build your own segment for your favorite shells, check out the [video](https://youtu.be/NR7i0SKFbtI) I made where I built ^ this exact NBA segment from scratch!
 
-## Set Up Oh My Posh
+# Set Up Oh My Posh
 
 I'll walk through how this all works on my Windows machine, using Windows Terminal with PowerShell, but remember that you can get the same effects on ANY OS with practically ANY shell. I'll include links to getting set up on other machines/shells.
 
-# What is Oh My Posh
+## What is Oh My Posh
 
 [Oh My Posh](https://ohmyposh.dev/) is an awesome open-source prompt theme engine for any shell. This means that if you're running Linux, Mac, Windows, whatever shell you have... it is compatible and will run on your machine.
 
-# Install Oh My Posh
+## Install Oh My Posh
 
 > **Note:** Make sure to install version 18.23.0 or higher.
 
@@ -46,7 +46,7 @@ To get setup, you first need to install Oh My Posh. On Windows, you can install 
 
 ![image](https://github.com/joadoumie/jordi-rants/assets/98557455/e0253483-4ff0-409b-a35a-ab5122681727)
 
-# Getting Oh My Posh Set up in PowerShell
+## Getting Oh My Posh Set up in PowerShell
 
 I'll walk through how to get this running in PowerShell, but you can follow the [Oh My Posh guide](https://ohmyposh.dev/docs/installation/prompt) to get this setup on ANY shell.
 
@@ -84,7 +84,7 @@ Check out the oh my posh documentation for installing nerd fonts for other opera
 
 Great! Now we should have the proper fonts installed on the machine to actually render the segments, but now we actually have to get the fonts to render inside of Windows Terminal. 
 
-# Getting Nerd Fonts to Render in Windows Terminal
+## Getting Nerd Fonts to Render in Windows Terminal
 
 In Windows Terminal, you can open up the settings by clicking on the dropdown arrow next to the plus sign, and selecting "Settings". Then, click on 'Open JSON file' to open up the settings file in your default JSON editor:
 
@@ -102,11 +102,11 @@ And voila! Look at the end result!
 
 That's so much better! Now we can actually see the segments and the icons that are being rendered. Finally, we need to [add the NBA segment to the prompt](#including-the-nba-segment-in-your-own-oh-my-posh-profile).
 
-## Including the NBA Segment in Your Own oh my posh Profile
+# Including the NBA Segment in Your Own oh my posh Profile
 
 Finally, we can start discussing adding the NBA segment to your oh-my-posh prompt.
 
-### Segments & Themes
+## Segments & Themes
 
 First off, a segment is a piece of information that is rendered in the prompt. Segments can be anything from the current time, to the current git branch, to the current NBA score. You can find a list of all the segments [here](https://ohmyposh.dev/docs/segments).
 
@@ -117,7 +117,7 @@ For example, you can see a few segments pointed out in the image below:
 
 In general, themes are a specific collection of segments that the community has put together. Themes are the way that you can customize the look and feel of your prompt. You can create your own themes, or you can use one of the many themes that are already available. You can find a list of themes [here](https://ohmyposh.dev/docs/themes).
 
-### NBA Segment Anatomy and Setting Up a Custom Theme
+## NBA Segment Anatomy and Setting Up a Custom Theme
 
 The standard initialization sets Oh My Posh's default theme. This configuration is embedded and thus kept up-to-date with Oh My Posh.
 
