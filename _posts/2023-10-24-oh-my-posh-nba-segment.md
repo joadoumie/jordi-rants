@@ -3,9 +3,6 @@ title: "Live NBA Data in Windows Terminal! NBA Oh My Posh Segment."
 date: 2023-10-24
 ---
 
-> **IMPORTANT INFO**
-I am still working on getting this thing through the [PR approval process](https://github.com/JanDeDobbeleer/oh-my-posh/pull/4352) to get this into the out-of-the-box Oh My Posh product. I'll update this post when that happens, but for now, you can use the instructions in the [clone and try](#check-out-the-pr-and-test-it-out) section below to get this working on your own machine today!
-
 ## Introduction
 
 I just built a thing. I'm a huge basketball fan, and as a developer, I'm also always in Windows Terminal. So, why shouldn't I be able to see information about my favorite basketball team on a surface I spend A LOT of my time staring at?
@@ -190,16 +187,3 @@ In the snippet above, you can see that the NBA segment has a few properties that
 | "http_timeout"     | `string` | The amount of time you are willing to wait for the API to respond before timing out. I recommend keeping this to AT LEAST 1500 ms.|
 | "season"        | `string` | The season you'd like to get information for. This is an optional field. If you don't provide a season, it will default to the current season. If you provide a previous season tbh... idk what will happen. Likely will just NOT work. | 
 | "days_offset"      | `string` | The number of days into the future you'd like to search for the upcoming game. This is an optional field. If you don't provide a days offset, it will default to 8 days. |
-
-
-# Check out the PR and Test it Out
-
-At this time of writing, I am still waiting on the PR to get approved so that this functionality comes **out of the box** with Oh My Posh. However, you can still use this functionality by cloning the repo and testing it out yourself!
-
-1. Clone my PR [here](https://github.com/JanDeDobbeleer/oh-my-posh/pull/4352)
-2. Navigate to the src folder and run `go build`
-3. Edit the $PROFILE to point to the new oh-my-posh executable and the new theme file (as described above)
-   
-```powershell
-C:\Users\jadou\source\repos\oh-my-posh\src\src.exe init --config 'C:\Users\jadou\source\oh-my-posh-profiles\lakers.omp.json' pwsh | Invoke-Expression
-```
