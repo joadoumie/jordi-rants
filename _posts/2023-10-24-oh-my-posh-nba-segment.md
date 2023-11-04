@@ -34,6 +34,8 @@ I'll walk through how this all works on my Windows machine, using Windows Termin
 
 # Install Oh My Posh
 
+> **Note:** Make sure to install version 18.23.0 or higher.
+
 [Install Oh My Posh on Mac](https://ohmyposh.dev/docs/installation/macos)
 
 [Install Oh My Posh on Linux](https://ohmyposh.dev/docs/installation/linux)
