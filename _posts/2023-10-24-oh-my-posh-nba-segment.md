@@ -22,7 +22,7 @@ And you'll get info on the next scheduled game too...
 ![image](https://github.com/joadoumie/jordi-rants/assets/98557455/ee46c2f2-de4c-4c00-8257-b6749b3b3a8d)
 
 
-If you're interested in learning how to program/build your own segment for your favorite shells, check out the [video](https://youtu.be/NR7i0SKFbtI) I made where I built ^ this exact NBA segment from scratch!
+If you're interested in learning how to program/build your own segment for your favorite shells, check out the [video](https://youtu.be/NR7i0SKFbtI) I made where I built ^ this exact NBA segment from scratch! You can also check out the wonderful [Oh My Posh repository](https://github.com/JanDeDobbeleer/oh-my-posh) and my PR into the GitHub repo [here](https://github.com/JanDeDobbeleer/oh-my-posh/pull/4352). 
 
 # Set Up Oh My Posh
 
