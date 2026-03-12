@@ -15,7 +15,7 @@ If you've been using AI tools for a while, you know the drill: you spend time in
 
 My fiancée and I were taking my dog (photo below):
 
-![Maeby](https://raw.githubusercontent.com/joadoumie/jordi-rants/232475b376f81fa3943a49c5a46dee6031e21b9a/assets/maeby.jpeg)
+![Maeby](https://github.com/joadoumie/jordi-rants/blob/5476027a2c981ba32efa555328efbf4386a4815c/assets/maeby.jpeg)
 
 to the park and had a conversation about how consumers of LLM agents should have visability and ownership of their own data/memory that power these AI experiences. I thought about it for a bit and realized: hey, y'know, this may be a fun way to explore [MCP Apps](https://modelcontextprotocol.io/extensions/apps/overview). A couple claude code prompts, some manual tweaks/experimenting later and here we are: [memory-mcp]([GITHUB_REPO_PLACEHOLDER]) — a cross-LLM memory management MCP server that lets you store, search, and manage your memories across AI tools, with a slick interactive UI (thanks MCP Apps!) baked right in:
 
