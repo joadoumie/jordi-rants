@@ -7,7 +7,7 @@ date: 2026-03-08
 
 I just built a thing:
 
-![Connect a surface — import from Claude, ChatGPT, Gemini, or Cursor](/assets/claude-2.jpg)
+![Connect a surface — import from Claude, ChatGPT, Gemini, or Cursor](https://github.com/joadoumie/jordi-rants/blob/232475b376f81fa3943a49c5a46dee6031e21b9a/assets/claude-2.jpg)
 
 It looks something like that ^.
 
@@ -15,7 +15,7 @@ If you've been using AI tools for a while, you know the drill: you spend time in
 
 My fiancée and I were taking my dog (photo below) to the park and had a conversation about how consumers of LLM agents should have visability and ownership of their own data/memory that power these AI experiences. I thought about it for a bit and realized: hey, y'know, this may be a fun way to explore [MCP Apps](https://modelcontextprotocol.io/extensions/apps/overview). A couple claude code prompts, some manual tweaks/experimenting later and here we are: [memory-mcp]([GITHUB_REPO_PLACEHOLDER]) — a cross-LLM memory management MCP server that lets you store, search, and manage your memories across AI tools, with a slick interactive UI (thanks MCP Apps!) baked right in:
 
-![Connect a surface — import from Claude, ChatGPT, Gemini, or Cursor](/assets/mcp-app-screenshot.png)
+![Connect a surface — import from Claude, ChatGPT, Gemini, or Cursor](https://github.com/joadoumie/jordi-rants/blob/232475b376f81fa3943a49c5a46dee6031e21b9a/assets/mcp-app-screenshot.png)
 
 The whole thing runs as an MCP server, which means you can plug it into Claude, VS Code, Cursor, or any MCP-compatible client. Your memories live in a local SQLite database that YOU own. No vendor holding your context hostage.
 
@@ -29,7 +29,7 @@ But there's a newer and underrated pattern: **MCP Apps**. This is the thing I wa
 
 And so... that's pretty much precisely what memory-mcp does. You ask Claude "what memories do I have?", it calls `recall_memories`, and a fully interactive memory dashboard pops up in the chat:
 
-![Memory Manager dashboard inside Claude.ai](/assets/mcp-app-screenshot.png)
+![Memory Manager dashboard inside Claude.ai](https://github.com/joadoumie/jordi-rants/blob/232475b376f81fa3943a49c5a46dee6031e21b9a/assets/mcp-app-screenshot.png)
 
 You can search memories, see which AI surface they came from (tagged as `claude`, `manual`, etc.), rate their importance, and delete the ones that are stale. All without leaving the chat window.
 
@@ -37,11 +37,11 @@ You can search memories, see which AI surface they came from (tagged as `claude`
 
 The other thing I wanted to tackle was import. If you've been using ChatGPT or Gemini for months, you have a ton of context trapped there. So I built a wizard that lets you pull those memories in:
 
-![Connect a surface — import from Claude, ChatGPT, Gemini, or Cursor](/assets/claude-2.jpg)
+![Connect a surface — import from Claude, ChatGPT, Gemini, or Cursor](https://github.com/joadoumie/jordi-rants/blob/232475b376f81fa3943a49c5a46dee6031e21b9a/assets/claude-2.jpg)
 
 You can import from Claude, ChatGPT, Gemini, or Cursor. Each source has its own export flow. For Gemini, for example, it walks you through downloading your data from Google Takeout and dropping the JSON file:
 
-![File import flow for Gemini](/assets/claude-3.jpg)
+![File import flow for Gemini](https://github.com/joadoumie/jordi-rants/blob/232475b376f81fa3943a49c5a46dee6031e21b9a/assets/claude-3.jpg)
 
 The server parses the export, extracts anything that looks like a user preference or persistent context, and stores it tagged with the source. You end up with a unified memory layer across all your AI tools.
 
@@ -49,11 +49,11 @@ The server parses the export, extracts anything that looks like a user preferenc
 
 Because it's an MCP server, it doesn't care what client you're running. Here it is inside VS Code — the AI calls `recall_memories` to pull context before answering:
 
-![recall_memories tool call in VS Code](/assets/vs-code-1.jpg)
+![recall_memories tool call in VS Code](https://github.com/joadoumie/jordi-rants/blob/232475b376f81fa3943a49c5a46dee6031e21b9a/assets/vs-code-1.jpg)
 
 And the memory dashboard renders just as well in VS Code's chat panel:
 
-![Memory dashboard rendered in VS Code](/assets/vs-code-2.jpg)
+![Memory dashboard rendered in VS Code](https://github.com/joadoumie/jordi-rants/blob/232475b376f81fa3943a49c5a46dee6031e21b9a/assets/vs-code-2.jpg)
 
 Same memories, same UI, totally different surface. That's the whole point.
 
