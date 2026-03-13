@@ -3,6 +3,12 @@ title: "I Built an MCP App to Own My AI Memory."
 date: 2026-03-11
 ---
 
+# TLDR
+
+I wanted to play around with [MCP Apps](https://modelcontextprotocol.io/extensions/apps/overview) and explore how they can serve as universal visualization layers across different AI surfaces. So I built a toy project called [memory-mcp](https://github.com/joadoumie/memory-mcp) — a cross-LLM memory management MCP server that lets you store, search, and manage your memories across AI tools, with a slick interactive UI baked right in. This means that your memories are unified across all your AI clients (Claude, ChatGPT, Gemini, Cursor, VS Code, etc.) and you can access them from any surface without vendor lock-in. When you ask questions across the different surfaces, each surface can pool from your shared memory to get you the most relevant information. You can also easily manage exactly what data is stored and how it's used. It's a fun example of how MCP Apps / MCP servers can provide a consistent user experience across different platforms.
+
+I've been wanting to play with MCP Apps for a while now, and they represent a really interesting way to build cross-platform AI experiences (with UI expereinces), and memory management is just one compelling use case. If you're curious about how it works or want to play with it yourself, check out the full source on [GitHub](https://github.com/joadoumie/memory-mcp)!
+
 # Introduction
 
 I just built a thing:
@@ -17,7 +23,7 @@ My fiancée and I were taking my dog (photo below):
 
 ![Maeby](https://raw.githubusercontent.com/joadoumie/jordi-rants/5476027a2c981ba32efa555328efbf4386a4815c/assets/maeby.jpeg)
 
-to the park and had a conversation about how consumers of LLM agents should have visability and ownership of their own data/memory that power these AI experiences. I thought about it for a bit and realized: hey, y'know, this may be a fun way to explore [MCP Apps](https://modelcontextprotocol.io/extensions/apps/overview). A couple claude code prompts, some manual tweaks/experimenting later and here we are: [memory-mcp]([GITHUB_REPO_PLACEHOLDER]) — a cross-LLM memory management MCP server that lets you store, search, and manage your memories across AI tools, with a slick interactive UI (thanks MCP Apps!) baked right in:
+to the park and had a conversation about how consumers of LLM agents should have visability and ownership of their own data/memory that power these AI experiences. I thought about it for a bit and realized: hey, y'know, this may be a fun way to explore [MCP Apps](https://modelcontextprotocol.io/extensions/apps/overview). A couple claude code prompts, some manual tweaks/experimenting later and here we are: [memory-mcp](https://github.com/joadoumie/memory-mcp) — a cross-LLM memory management MCP server that lets you store, search, and manage your memories across AI tools, with a slick interactive UI (thanks MCP Apps!) baked right in:
 
 ![Connect a surface — import from Claude, ChatGPT, Gemini, or Cursor](https://raw.githubusercontent.com/joadoumie/jordi-rants/232475b376f81fa3943a49c5a46dee6031e21b9a/assets/mcp-app-screenshot.png)
 
@@ -96,4 +102,4 @@ From there, any MCP-compatible client will have access to the full tool surface:
 
 TLDR -- I built a toy thing. Is it cool? I think so. Is it production-ready? lol. The gist is: it's a cross-LLM memory manager built as an MCP server with an interactive dashboard UI. It lets you unify your AI context across tools, and the whole thing is open source for anyone to play with. It's a fun example of how MCP Apps can serve as universal visualization layers across different AI surfaces.
 
-Check out the full source on [GitHub]([GITHUB_REPO_PLACEHOLDER]) if you want to poke around, contribute, or riff on the idea.
+Check out the full source on [GitHub](https://github.com/joadoumie/memory-mcp) if you want to poke around, contribute, or riff on the idea.
