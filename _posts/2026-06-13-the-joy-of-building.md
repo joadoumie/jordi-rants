@@ -1,6 +1,6 @@
 ---
 title: "AI and the Joy of Building"
-date: 2026-03-11
+date: 2026-06-13
 ---
 
 # I just want to bulid cool things
